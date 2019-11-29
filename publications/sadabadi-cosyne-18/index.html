@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexible, optimal motor control in a thalamo-cortical circuit model</title>
+        <style>
+
+    html body {
+        font-family: 'Alegreya', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #330088;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/academicons.css"/>
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solized_dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Ocaml.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.54.0" />
+   </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/people/">People</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                                <li><a href="/contact/">Contact</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ghennequin/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="http://hennequinlab.slack.com"><i class="fa fa-slack"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+    <div><a href=".." style="font-size: 200%;"><i class="fa fa-arrow-up"></i></a></div>
+
+    <h4><a href="">Flexible, optimal motor control in a thalamo-cortical circuit model</a></h4>
+    M Sadabadi, T-C Kao, and G Hennequin<br>
+    <span style="color: #55cc00;">COSYNE</span>, 2018 &nbsp;
+    
+    
+    
+ 
+    
+    <br>
+    <br>
+    <h4>Abstract</h4>
+    <br>
+    <div class="text-justify"><p>How does the brain control movement? Experiments suggest that the (pre-)motor
+cortex behaves like an «engine» whose dynamics drive movement, and whose
+activity must first be initialised into movement-specific states (the «optimal
+subspace hypothesis», Shenoy et al, 2013). Both the computational and
+mechanistic underpinnings of this preparatory process remain poorly understood.
+Here, we propose a realistic circuit model for movement preparation and
+execution. We formalise movement preparation as an optimal control problem,
+under an internal forward model that predicts (future) patterns of muscle
+activity from momentary cortical preparatory states. We compute the preparatory
+input to cortex that drives fastest convergence to preparatory states predicted
+to yield the correct motor outputs. We also request that the control input
+keeps preparatory activity in an appropriate «output-null» subspace to prevent
+unwanted, premature motor outputs (Kaufman et al, 2014).</p>
+
+<p>Critically, we show that optimal control inputs can be realised via feedback in
+realistic neural circuit architectures. Specifically, we model cortex as an
+inhibition-stabilised network, whose dynamics resembles those of monkey M1
+during reaching (Hennequin et al, 2014). Optimal movement preparation is
+accomplished by a thalamo-cortical loop, gated by the basal ganglia. The loop
+is open by default, closed to drive movement preparation, and eventually
+re-opened to initiate movement. Importantly, we find that control loops can be
+flexibly combined to generate movements assembled from a few movement
+primitives.</p>
+
+<p>The model produces naturalistic patterns of preparatory activity, including
+complex transients early during preparation, and displaying substantial
+variability in output-null dimensions. Consistent with data, across-trial
+variability is suppressed during preparation. Moreover, preparation may be as
+short as 200ms without loss of motor accuracy, also consistent with recent
+experimental observations. Our work brings together several threads of
+experimental research on both cortical and subcortical areas, and offers a new
+computational, normative perspective on the dynamics of motor circuits.</p>
+</div>
+    
+
+</main>
+
+        
+    </body>
+
+</html>
+

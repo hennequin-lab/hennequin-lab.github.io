@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GSM=SSN: recurrent neural circuits optimised for probabilistic inference</title>
+        <style>
+
+    html body {
+        font-family: 'Alegreya', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #330088;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/academicons.css"/>
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solized_dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Ocaml.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.54.0" />
+   </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/people/">People</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                                <li><a href="/contact/">Contact</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ghennequin/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="http://hennequinlab.slack.com"><i class="fa fa-slack"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+    <div><a href=".." style="font-size: 200%;"><i class="fa fa-arrow-up"></i></a></div>
+
+    <h4><a href="">GSM=SSN: recurrent neural circuits optimised for probabilistic inference</a></h4>
+    R Echeveste, G Hennequin<sup>*</sup>, and M Lengyel<sup>*</sup><br>
+    <span style="color: #55cc00;">COSYNE</span>, 2017 &nbsp;
+    
+    
+    
+ 
+    
+    <br>
+    <br>
+    <h4>Abstract</h4>
+    <br>
+    <div class="text-justify"><p>The operation of cortical circuits has traditionally been studied using either
+bottom-up or top-down approaches.  The former identified dynamical mechanisms
+responsible for a wealth of empirical data, but without reference to
+computational function, while the laer extracted signatures of specific
+computations from neural activity, but remained agnostic as to the underlying
+mechanisms. Here we bridge these two approaches and study the dynamics and
+function of cortical circuits in a principled unifying framework. In contrast
+to recent optimisation-based approaches, which use highly simplified
+architectures and only address trial-average responses, here we train
+stochastic, recurrent neural circuits with realistic components that allow us
+to link response dynamics and variability more directly to computational
+function. We train networks to perform sampling-based probabilistic inference
+under a widely-used generative model of natural images, the Gaussian Scale
+Mixture (GSM) model. We first show that the GSM posterior mean grows with
+stimulus contrast z, superlinearly for small z and saturating for large z,
+while the posterior variance decreases with z. We then employ a novel, assumed
+density filtering-based approach to obtain the moments of activity in
+stochastic networks as smooth, dierentiable functions of network parameters,
+and match them to those of the GSM posterior for a set of training stimuli. We
+show that the network appropriately generalizes to novel stimuli, reproducing
+the scaling of means and variances with contrast. Furthermore, the networks
+thus obtained operate in the dynamical regime of stabilised supralinear
+networks (SSN) that has recently been proposed to underlie response
+normalization in V1. Thus, our results suggest a generic function for
+inhibition stabilised dynamics with a loose excitatory-inhibitory balance: they
+provide ideal substrates of recognition models for probabilistic inference.
+Conversely, our approach could also be used to infer the brain’s internal
+models based on observed dynamics.</p>
+</div>
+    
+
+</main>
+
+        
+    </body>
+
+</html>
+

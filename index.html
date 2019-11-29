@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Neural dynamics and control group</title>
+        <style>
+
+    html body {
+        font-family: 'Alegreya', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #330088;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+
+
+<link rel="stylesheet" href="https://ghennequin.github.io/css/academicons.css"/>
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solized_dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Ocaml.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.54.0" />
+   </head>
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/people/">People</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                                <li><a href="/contact/">Contact</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ghennequin/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="http://hennequinlab.slack.com"><i class="fa fa-slack"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="intro">
+      <div>
+         <img style="width: 100%;" src="front.jpg"> 
+      </div>
+
+      <h1 style="font-size: 300%;">Neural dynamics and control group</h1>
+
+      <div style="font-size: 130%;">
+      Our group is part of the <a href="http://cbl.eng.cam.ac.uk">Computational and Biological Learning lab</a> in <a href="http://www.eng.cam.ac.uk">Cambridge</a>. <br> We build network-level theories of motor control and learning.
+      </div>
+
+      <hr>
+<div class="news">
+<h2>News</h2>
+     
+    
+
+<div class="item">
+October 2019
+<div class="title">
+  <a href="/news/kao-curr-opin-neurobiol-review/">New review article on control theory for analysis of network models</a>
+</div>
+<div class="blurb">
+See <a href="/publications/kao-cur-op-neurobiol-2019/">publications</a>
+</div>
+</div>
+
+ 
+     
+    
+
+<div class="item">
+March 2019
+<div class="title">
+  <a href="/news/cosyne19/">Guillaume to speak at two Cosyne workshops in Lisbon</a>
+</div>
+<div class="blurb">
+He will be giving a perspective talk about the use of control-theoretic methods in neuroscience (<a href="/news/hennequin_cosyne_2019.pdf">slides</a>) at the workshop on <a href="http://www.cosyne.org/c/index.php?title=Workshops2019_data">data, dynamics and computation</a>, and a talk on the role of inhibition in motor control at the workshop on <a href="http://www.cosyne.org/c/index.php?title=Workshops2019_inhibition_2">inhibitory microcircuits</a>
+</div>
+</div>
+
+ 
+     
+    
+
+<div class="item">
+October 2018
+<div class="title">
+  <a href="/news/kao-spotlight/">Commentary in TICS on recent brain-computer interface results by the Baptista/Yu/Chase groups at CMU</a>
+</div>
+<div class="blurb">
+See full text <a href="/publications/kao-tics-18/">here</a>
+</div>
+</div>
+
+ 
+     
+    
+
+<div class="item">
+September 2018
+<div class="title">
+  <a href="/news/stroud-2018/">New paper accepted at Nature Neuroscience, with Jake Stroud, Mason Porter and Tim P. Vogels</a>
+</div>
+<div class="blurb">
+Motor primitives in space and time via targeted gain modulation in cortical networks
+</div>
+</div>
+
+ 
+     
+    
+
+<div class="item">
+September 2018
+<div class="title">
+  <a href="/news/natural-gradient-paper/">New paper on natural gradient in deep networks</a>
+</div>
+<div class="blurb">
+See <a href="/publications/bernacchia-nips-2018/">publications</a>
+</div>
+</div>
+
+ 
+     
+    
+
+<div class="item">
+September 2018
+<div class="title">
+  <a href="/news/bernstein-workshop/">Bernstein workshop, Berlin, 25-26 September</a>
+</div>
+<div class="blurb">
+Come and join us for an inspiring workshop on &ldquo;Emergent function in non-random neural networks&rdquo;, ahead of the main Bernstein Conference
+</div>
+</div>
+
+ 
+    
+</div>
+
+
+
+    </div>
+
+</main>
+
+        
+    </body>
+
+</html>
+

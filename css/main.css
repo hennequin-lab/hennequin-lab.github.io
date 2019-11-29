@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 55px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main {
+    font-size: 12pt;
+    margin: auto;
+    padding: 25px;
+    flex: 1 0 auto;
+    max-width: 55em;
+}
+
+/*footer*/
+
+.copyright {
+    margin: 15px 0;
+}
+
+/*home page*/
+
+.intro {
+    transform: translateY(5vh);
+}
+
+.intro > h1 {
+    color: #212121;
+    font-size: 5vh;
+}
+
+.intro > h2 {
+    color: #757575;
+    font-size: 3vmin;
+}
+
+.intro > .profile {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+/*apply accent colour to links*/
+
+a:link, a:visited {
+    color: var(--accent);
+}
+
+a.icon:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent) !important;
+}
+
+/*paginator at bottom of list view*/
+
+.pages {
+    padding: 15px 0;
+}
+
+.pages-icon {
+    padding: 0 15px;
+}
+
+/*list item for posts and projects*/
+
+.item {
+    padding: 10px 0;
+}
+
+.item-tag {
+    background-color: var(--accent);
+}
+
+/*navigation bar icons*/
+
+.navbar {
+  font-size: 120%;
+}
+
+.navbar-icon {
+    font-size: 150%;
+    display: inline-block !important;
+}
+
+/*coloured borders at top and bottom of the page*/
+
+.navbar.navbar-default {
+    border-top: var(--border-width) solid #555;
+}
+
+footer {
+    border-bottom: var(--border-width) solid #555;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+#map {
+  height: 30em;
+  width: 100%;
+}
+
+.tag_list {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+ 
+.tag {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 120%;
+}
+
+.tag a {
+  color: #888;
+}
+
+.tag a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+
+.news {
+}
+
+.news .item {
+  margin-bottom: 0em;
+}
+ 
+.news .item .title {
+  font-size: 14pt;
+}
+
+.news .item .blurb {
+  color: #888;
+}
+  
+
