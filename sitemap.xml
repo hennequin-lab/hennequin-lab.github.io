@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ghennequin.github.io/people/schimel/</loc>
+    <lastmod>2019-12-23T08:00:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ghennequin.github.io/people/jensen/</loc>
+    <lastmod>2019-12-23T08:00:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ghennequin.github.io/people/tripodi/</loc>
     <lastmod>2019-10-24T09:19:58+01:00</lastmod>
   </url>
@@ -323,12 +333,12 @@
   
   <url>
     <loc>https://ghennequin.github.io/people/</loc>
-    <lastmod>2019-10-24T09:19:58+01:00</lastmod>
+    <lastmod>2019-12-23T08:00:18+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ghennequin.github.io/</loc>
-    <lastmod>2019-10-24T09:19:58+01:00</lastmod>
+    <lastmod>2019-12-23T08:00:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
