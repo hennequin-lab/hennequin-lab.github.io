@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ghennequin.github.io/people/you/</loc>
+    <lastmod>2020-02-05T13:59:56+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ghennequin.github.io/news/kao-biorxiv-20/</loc>
     <lastmod>2020-02-05T13:06:15+00:00</lastmod>
   </url>
@@ -343,12 +348,12 @@
   
   <url>
     <loc>https://ghennequin.github.io/people/</loc>
-    <lastmod>2019-12-23T08:00:18+00:00</lastmod>
+    <lastmod>2020-02-05T13:59:56+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ghennequin.github.io/</loc>
-    <lastmod>2020-02-05T13:06:15+00:00</lastmod>
+    <lastmod>2020-02-05T13:59:56+00:00</lastmod>
     <priority>0</priority>
   </url>
   
