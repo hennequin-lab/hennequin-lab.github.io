@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ghennequin.github.io/people/stone/</loc>
+    <lastmod>2020-09-21T16:44:10+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ghennequin.github.io/publications/echeveste-natneuro-2020/</loc>
     <lastmod>2020-08-09T20:42:42+01:00</lastmod>
   </url>
@@ -363,12 +368,12 @@
   
   <url>
     <loc>https://ghennequin.github.io/people/</loc>
-    <lastmod>2020-02-05T13:59:56+00:00</lastmod>
+    <lastmod>2020-09-21T16:44:10+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://ghennequin.github.io/</loc>
-    <lastmod>2020-08-09T20:42:42+01:00</lastmod>
+    <lastmod>2020-09-21T16:44:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   
