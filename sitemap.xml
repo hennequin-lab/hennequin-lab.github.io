@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hennequin-lab.github.io/news/neurips-2020/</loc>
+    <lastmod>2020-10-22T09:53:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hennequin-lab.github.io/news/jensen-bernstein-20/</loc>
     <lastmod>2020-10-19T11:06:05+01:00</lastmod>
   </url>
@@ -393,13 +398,13 @@
   
   <url>
     <loc>https://hennequin-lab.github.io/</loc>
-    <lastmod>2020-10-19T11:06:05+01:00</lastmod>
+    <lastmod>2020-10-22T09:53:33+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hennequin-lab.github.io/news/</loc>
-    <lastmod>2020-10-19T11:06:05+01:00</lastmod>
+    <lastmod>2020-10-22T09:53:33+01:00</lastmod>
     <priority>0</priority>
   </url>
   
