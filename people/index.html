@@ -7,14 +7,8 @@
         <title>Lab members</title>
         <style>
 
-    html body {
+    html, body {
         font-family: 'Alegreya', sans-serif;
-        background-color: 'white';
-    }
-
-    :root {
-        --accent: #330088;
-        --border-width:  5px ;
     }
 
 </style>
@@ -25,82 +19,67 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <script defer src="https://hennequin-lab.github.io/css/friconix.js"></script>
+
+<script defer>
  
+function menu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className = "topnav responsive slidedown";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>
-    $(document).on('click', function() {
-        $('.collapse').collapse('hide');
-    })
-</script> <meta name="generator" content="Hugo 0.54.0" />
+ <meta name="generator" content="Hugo 0.54.0" />
    </head>
 
     <body>
          
-        <nav class="navbar navbar-default navbar-fixed-top">
 
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                            
-                                <li><a href="/"><span class=""><i class='fi-xnsuxl-home-solid'></i></span> Home</a></li>
-                            
-                                <li><a href="/people/"><span class="active-menu-item"><i class='fi-xnsuxl-team-solid'></i></span> People</a></li>
-                            
-                                <li><a href="/publications/"><span class=""><i class='fi-xnsuxl-barcode-solid'></i></span> Publications</a></li>
-                            
-                                <li><a href="/contact/"><span class=""><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="fi-xnsxxm-graduation-cap-solid"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/hennequin-lab/"><i class="fi-xnsxxm-github"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+        <div class="topnav" id="myTopnav">
+            <div class="topnavcontainer">
+            <div class="topnavleft">
+            
+            
+            
+            <a href="/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> Home</a>
+            
+            <a href="/people/" class="active"><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> People</a>
+            
+            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-barcode-solid'></i></span> Publications</a>
+            
+            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a>
+            
+           
             </div>
 
-        </nav>
+            <div class="topnavright">
+            
+            
+            <a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="fi-xnsxxl-graduation-cap-solid"></i></a>
+            
+            <a href="https://github.com/hennequin-lab/"><i class="fi-xnsxxl-github"></i></a>
+            
+            
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fi-xnluxl-three-bars"></i>
+            </a>
+            </div>
+        </div>
 
 
-<main>
+
+
+<div class="main">
 
     <h1>Current lab members</h1>
-    <br> 
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+    <div class="flex-container">
+        
+        <div class="person"> 
 
   
 
@@ -108,11 +87,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="hennequin.png"/></div>
 
-<h4>Guillaume Hennequin</h4></a>
+<p>Guillaume Hennequin</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -120,11 +99,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="you.png"/></div>
 
-<h4>This could be YOU</h4></a>
+<p>This could be YOU</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -132,11 +111,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="li.png"/></div>
 
-<h4>Xizi Li</h4></a>
+<p>Xizi Li</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -144,11 +123,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="kao.jpg"/></div>
 
-<h4>Ta-Chu (Calvin) Kao</h4></a>
+<p>Ta-Chu (Calvin) Kao</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -156,11 +135,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="marine.png"/></div>
 
-<h4>Marine Schimel</h4></a>
+<p>Marine Schimel</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -168,11 +147,11 @@
 
 <div><img class="img-circle" style="height: 6em;" src="kris.png"/></div>
 
-<h4>Kris Jensen</h4></a>
+<p>Kris Jensen</p></a>
    
  </div>
-    
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left;"> 
+        
+        <div class="person"> 
 
   
 
@@ -180,191 +159,174 @@
 
 <div><img class="img-circle" style="height: 6em;" src="jasmine.png"/></div>
 
-<h4>Jasmine Stone</h4></a>
+<p>Jasmine Stone</p></a>
    
  </div>
-    
-
+        
+    </div>
     <br>
     <hr>
     <h2>Collaborators</h2>
-    <br> 
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="flex-container">
+    
+    <div class="person"> 
 
  <a href="http://ion.uoregon.edu/content/yashar-ahmadian"> 
-<h4>
 Yashar Ahmadian
+<br>
  <span style="color: gray;"> (Cambridge) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://baggiogi.github.io"> 
-<h4>
 Giacomo Baggio
+<br>
  <span style="color: gray;"> (University of Padova) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://scholar.google.com/citations?user=n48pFqcAAAAJ&amp;hl=en"> 
-<h4>
 Alberto Bernacchia
+<br>
  <span style="color: gray;"> (Cambridge) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="http://cbl.eng.cam.ac.uk/Public/Lengyel/WebHome"> 
-<h4>
 Máté Lengyel
+<br>
  <span style="color: gray;"> (Cambridge) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://ctn.zuckermaninstitute.columbia.edu/Ken"> 
-<h4>
 Ken Miller
+<br>
  <span style="color: gray;"> (Columbia University) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://scholar.google.com/citations?user=DDrMMRoAAAAJ&amp;hl=en&amp;oi=ao"> 
-<h4>
 Virginia Rutten
+<br>
  <span style="color: gray;"> (Gatsby &amp; HHMI Janelia) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://www2.mrc-lmb.cam.ac.uk/group-leaders/t-to-z/marco-tripodi/"> 
-<h4>
 Marco Tripodi
+<br>
  <span style="color: gray;"> (MRC Laboratory of Molecular Biology) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="https://vogelslab.org"> 
-<h4>
 Tim Vogels
+<br>
  <span style="color: gray;"> (IST Austria) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; position: relative; margin-left:2em; margin-right: 2em; align: left"> 
+    <div class="person"> 
 
  <a href="http://automatica.dei.unipd.it/people/zampieri.html"> 
-<h4>
 Sandro Zampieri
+<br>
  <span style="color: gray;"> (University of Padova) </span> 
-</h4>
  </a> 
  
  </div>
     
+    </div>
 
-    <br>
     <hr>
 
     <h2>Former co-conspirators</h2>
-    <br> 
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="flex-container">
+    
+    <div class="person"> 
 
  <a href="https://sites.google.com/view/msadabadi"> 
-<h4>
 Mahdieh Sadabadi
  <span style="color: gray;"> (now University Lecturer in Sheffield) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="person"> 
 
  <a href="https://rodrigoecheveste.wixsite.com/home"> 
-<h4>
 Rodrigo Echeveste
  <span style="color: gray;"> (now a research group leader in Santa Fe, Argentina) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="person"> 
 
  <a href="http://www.gatsby.ucl.ac.uk/~laurence/"> 
-<h4>
 Laurence Aitchison
  <span style="color: gray;"> (now University Lecturer in Bristol) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="person"> 
 
  <a href="http://gps.divisions.caltech.edu/people/siraput-jongaramrungruang"> 
-<h4>
 Siraput Jongaramrungruang
  <span style="color: gray;"> (now fixing the world&#39;s weather at Caltech) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="person"> 
 
  <a href="https://jakepstroud.github.io"> 
-<h4>
 Jake Stroud
  <span style="color: gray;"> (now an independent postdoctoral fellow at CBL) </span> 
-</h4>
  </a> 
  
  </div>
     
-    <div style="display: inline-block; margin-left:2em; margin-left:2em; "> 
+    <div class="person"> 
 
  <a href="https://scholar.google.com/citations?user=RVO3EREAAAAJ&amp;hl=en&amp;oi=ao"> 
-<h4>
 Dylan Festa
  <span style="color: gray;"> (now a postdoc with Ruben Cohen-Cagli at Albert Einstein) </span> 
-</h4>
  </a> 
  
  </div>
     
+    </div>
 
 
-</main>
+</div>
 
 
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
+
 </html>

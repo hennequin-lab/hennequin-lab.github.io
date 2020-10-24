@@ -7,14 +7,8 @@
         <title>Jake Stroud</title>
         <style>
 
-    html body {
+    html, body {
         font-family: 'Alegreya', sans-serif;
-        background-color: 'white';
-    }
-
-    :root {
-        --accent: #330088;
-        --border-width:  5px ;
     }
 
 </style>
@@ -25,91 +19,76 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <script defer src="https://hennequin-lab.github.io/css/friconix.js"></script>
+
+<script defer>
  
+function menu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className = "topnav responsive slidedown";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>
-    $(document).on('click', function() {
-        $('.collapse').collapse('hide');
-    })
-</script> <meta name="generator" content="Hugo 0.54.0" />
+ <meta name="generator" content="Hugo 0.54.0" />
    </head>
 
     <body>
          
-        <nav class="navbar navbar-default navbar-fixed-top">
 
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
-                    
-                        <ul class="nav navbar-nav">
-                            
-                            
-                                <li><a href="/"><span class=""><i class='fi-xnsuxl-home-solid'></i></span> Home</a></li>
-                            
-                                <li><a href="/people/"><span class=""><i class='fi-xnsuxl-team-solid'></i></span> People</a></li>
-                            
-                                <li><a href="/publications/"><span class=""><i class='fi-xnsuxl-barcode-solid'></i></span> Publications</a></li>
-                            
-                                <li><a href="/contact/"><span class=""><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a></li>
-                            
-                        </ul>
-                    
-
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="fi-xnsxxm-graduation-cap-solid"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://github.com/hennequin-lab/"><i class="fi-xnsxxm-github"></i></a></li>
-                            
-                        </ul>
-                    
-
-                </div>
-
+        <div class="topnav" id="myTopnav">
+            <div class="topnavcontainer">
+            <div class="topnavleft">
+            
+            
+            
+            <a href="/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> Home</a>
+            
+            <a href="/people/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> People</a>
+            
+            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-barcode-solid'></i></span> Publications</a>
+            
+            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a>
+            
+           
             </div>
 
-        </nav>
+            <div class="topnavright">
+            
+            
+            <a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en"><i class="fi-xnsxxl-graduation-cap-solid"></i></a>
+            
+            <a href="https://github.com/hennequin-lab/"><i class="fi-xnsxxl-github"></i></a>
+            
+            
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fi-xnluxl-three-bars"></i>
+            </a>
+            </div>
+        </div>
 
 
-<main>
-    <div><a href=".." style="font-size: 200%;"><i class="fi-xnluxl-chevron" style="color: #888;'"></i></a></div>
+
+
+<div class="main">
+    <div><a href=".." style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a></div>
     <br>
     
 
     
 
-    <br> <div class="text-justify"><!-- Here you might want to place some Markdown content. -->
+    <div class="text-justify"><!-- Here you might want to place some Markdown content. -->
 </div>
 
-</main>
+</div>
 
 
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
+
 </html>
 

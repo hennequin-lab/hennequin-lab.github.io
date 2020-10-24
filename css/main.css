@@ -1,116 +1,164 @@
+* {
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
 html,
 body {
+    width: 100%;
     height: 100%;
-}
-
-body {
-    padding-top: 55px;
-    display: flex;
+    padding: 0;
+    margin: 0;
     text-align: center;
-    flex-direction: column;
 }
 
-main {
+a {
+    text-decoration: none;
+    color: #000088;
+    font-weight: normal;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000088;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #0000aa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
     font-size: 12pt;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     margin: auto;
-    padding: 25px;
-    flex: 1 0 auto;
+    margin-top: 5em;
+    max-width: 50em;
+}
+
+.flex-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.person {
+    padding: 1em;
+    max-width: 18em;
+}
+
+.topimg {
+    width: inherit;
+}
+
+.topnav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 3.2em;
+    text-align: center;
+}
+
+.topnav a {
+    color: #888;
+    float: left;
+    display: block;
+    align-items: bottom;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavcontainer {
+    margin: auto;
     max-width: 55em;
 }
 
-
-.active-menu-item {
-    color: #aa0000;
+.topnav .topnavleft {
+    padding-left: 0em;
 }
+
+.topnav .topnavright {
+    padding-right: 0em;
+}
+
+.topnav .topnavleft a {
+    float: left;
+    /* margin-right: 1em; */
+}
+
+.topnav .topnavright a {
+    float: right;
+}
+
+.topnav a:hover {
+    color: #222;
+}
+
+.topnav a.active {
+    color: #222;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.slidedown {
+    max-height: 20em;
+    -webkit-transition: max-height 0.3s ease-in;
+    -moz-transition: max-height 0.3s ease-in;
+    -o-transition: max-height 0.3s ease-in;
+    transition: max-height 0.3s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .topnavright a {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+}
+
 
 /*footer*/
 
 .copyright {
     margin: 15px 0;
-}
-
-
-/*home page*/
-
-.intro {
-    transform: translateY(5vh);
-}
-
-.intro>h1 {
-    color: #212121;
-    font-size: 5vh;
-}
-
-.intro>h2 {
-    color: #757575;
-    font-size: 3vmin;
-}
-
-.intro>.profile {
-    width: 20vh;
-    height: 20vh;
-    border-radius: 50%;
-}
-
-
-/*apply accent colour to links*/
-
-a:link,
-a:visited {
-    color: var(--accent);
-}
-
-a.icon:hover {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent) !important;
-}
-
-
-/*paginator at bottom of list view*/
-
-.pages {
-    padding: 15px 0;
-}
-
-.pages-icon {
-    padding: 0 15px;
-}
-
-
-/*list item for posts and projects*/
-
-.item {
-    padding: 10px 0;
-}
-
-.item-tag {
-    background-color: var(--accent);
-}
-
-
-/*navigation bar icons*/
-
-.navbar {
-    font-size: 120%;
-}
-
-.navbar-icon {
-    font-size: 150%;
-    display: inline-block !important;
-}
-
-
-/*coloured borders at top and bottom of the page*/
-
-.navbar.navbar-default {
-    border-top: var(--border-width) solid #555;
-}
-
-footer {
-    border-bottom: var(--border-width) solid #555;
 }
 
 img {
@@ -148,7 +196,7 @@ img {
 }
 
 .news .item {
-    margin-bottom: 0em;
+    margin-bottom: 1em;
 }
 
 .news .item .title {
@@ -169,4 +217,12 @@ img {
     border-top: 1px solid #aaaaaa;
     color: #aaaaaa;
     font-size: 100%;
+}
+
+div[class="fi-*"] {
+    padding-bottom: 0.2em;
+}
+
+.text-justify {
+    text-align: justify;
 }
