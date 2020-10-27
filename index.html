@@ -31,6 +31,11 @@ function menu() {
     x.className = "topnav";
   }
 }
+
+function menu_off() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -71,12 +76,13 @@ function menu() {
             </div>
         </div>
 
+        <div class="topimg"></div>
+
+        <div class="main" style="margin-top:3em;" onclick="menu_off()">
 
 
 
-<div class="topimg"></div>
 
-<div class="main" style="margin-top:3em;">
     <h1 style="font-size: 300%; margin-top: 0;">Neural dynamics and control group</h1>
 
     <div style="font-size: 130%;">
@@ -232,7 +238,8 @@ Come and join us for an inspiring workshop on &ldquo;Emergent function in non-ra
 
 </div>
 
-
+    </div> 
+   
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
 

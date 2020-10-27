@@ -31,6 +31,11 @@ function menu() {
     x.className = "topnav";
   }
 }
+
+function menu_off() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -71,10 +76,11 @@ function menu() {
             </div>
         </div>
 
+        <div class="topimg"></div>
+
+        <div class="main" style="margin-top:3em;" onclick="menu_off()">
 
 
-
-<div class="main">
 
     <h1>Publications</h1>
      <h4>(see also our <a href="https://scholar.google.co.uk/citations?user=-NkKYYcAAAAJ&amp;hl=en">Google Scholar</a> profile)</h4> 
@@ -704,9 +710,8 @@ function menu() {
     
     
  
-</div>
-
-
+    </div> 
+   
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
 

@@ -31,6 +31,11 @@ function menu() {
     x.className = "topnav";
   }
 }
+
+function menu_off() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -71,10 +76,12 @@ function menu() {
             </div>
         </div>
 
+        <div class="topimg"></div>
+
+        <div class="main" style="margin-top:3em;" onclick="menu_off()">
 
 
 
-<div class="main">
     <div><a href=".." style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a></div>
     <br>
     
@@ -88,9 +95,8 @@ function menu() {
     <div class="text-justify"><p>Kris studied both a BA in chemistry and an MPhil in computational biology at Cambridge before joining the group as a PhD student in 2019 on a Gates scholarship. He is interested in all things brain-related and currently works on how animals can tackle multisensory learning problems by interacting with their environment.</p>
 </div>
 
-</div>
-
-
+    </div> 
+   
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
 

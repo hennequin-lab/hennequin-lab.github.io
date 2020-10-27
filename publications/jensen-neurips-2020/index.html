@@ -31,6 +31,11 @@ function menu() {
     x.className = "topnav";
   }
 }
+
+function menu_off() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -71,6 +76,9 @@ function menu() {
             </div>
         </div>
 
+        <div class="topimg"></div>
+
+        <div class="main" style="margin-top:3em;" onclick="menu_off()">
 
 
 
@@ -122,7 +130,8 @@ single angular variable.</p>
 
 </div>
 
-
+    </div> 
+   
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
 
