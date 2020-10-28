@@ -36,6 +36,29 @@ function menu_off() {
   var x = document.getElementById("myTopnav");
   x.className = "topnav";
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var topbutton = document.getElementById("topbutton");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    topbutton.style.visibility = "visible";
+    topbutton.style.color = "#666";
+    topbutton.style.transform = "translateX(-50%)";
+  } else {
+    topbutton.style.visibility = "hidden";
+    topbutton.style.color = "#fff";
+    topbutton.style.transform = "translateX(-400%)";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -50,13 +73,13 @@ function menu_off() {
             
             
             
-            <a href="/" class="active"><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> Home</a>
+            <a href="/" class="active"><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> HOME</a>
             
-            <a href="/people/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> People</a>
+            <a href="/people/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> PEOPLE</a>
             
-            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xwsuxl-brain-alt-thin' style='color: #555;'></i></span> Publications</a>
+            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xwsuxl-brain-solid'></i></span> PUBLICATIONS</a>
             
-            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a>
+            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> CONTACT</a>
             
            
             </div>
@@ -77,17 +100,17 @@ function menu_off() {
         </div>
 
         <div class="topimg"></div>
-
-        <div class="main" style="margin-top:3em;" onclick="menu_off()">
+        <div class="topbuttonbar"></div>
+        <div class="topbuttonbar_transparent"></div>
+        <div class="topbutton" onclick="topFunction()" id="topbutton"><i class="fi-ctlux2-chevron"></i></div>
+        <div class="main" id="main" style="margin-top:3em;" onclick="menu_off()">
 
 
 
 
     <h1 style="font-size: 300%; margin-top: 0;">Neural dynamics and control group</h1>
 
-    <div style="font-size: 130%;">
-        Our group is part of the <a href="http://cbl.eng.cam.ac.uk">Computational and Biological Learning lab</a> in <a href="http://www.eng.cam.ac.uk">Cambridge</a>. <br> We build network-level theories of motor control and learning.
-    </div>
+    <h3>Our group is part of the <a href="http://cbl.eng.cam.ac.uk">Computational and Biological Learning lab</a> in <a href="http://www.eng.cam.ac.uk">Cambridge</a>. <br> We build network-level theories of motor control and learning.</h3>
     <br>
     <hr> <div class="news">
 <h2>News</h2>
@@ -96,9 +119,7 @@ function menu_off() {
 
 <div class="item">
 October 2020
-<div class="title">
-  <a href="/news/neurips-2020/">Two papers accepted at Neurips</a>
-</div>
+<div><a href="/news/neurips-2020/">Two papers accepted at Neurips</a></div>
 <div class="blurb">
 See <a href="/publications/rutten-neurips-2020/">Rutten et al.</a>&rsquo;s work on non-reversible Gaussian processes (oral), and <a href="/publications/jensen-neurips-2020/">Jensen et al.</a>&rsquo;s new manifold GPLVM.
 </div>
@@ -110,9 +131,7 @@ See <a href="/publications/rutten-neurips-2020/">Rutten et al.</a>&rsquo;s work 
 
 <div class="item">
 October 2020
-<div class="title">
-  <a href="/news/jensen-bernstein-20/">Kris Jensen speaks about mGPLVM at the Bernstein conference</a>
-</div>
+<div><a href="/news/jensen-bernstein-20/">Kris Jensen speaks about mGPLVM at the Bernstein conference</a></div>
 <div class="blurb">
 <a href="https://vimeo.com/463427601">Watch the talk here <i class='fi-lnsxxl-videocamera-solid'></i></a>
 </div>
@@ -124,9 +143,7 @@ October 2020
 
 <div class="item">
 February 2020
-<div class="title">
-  <a href="/news/kao-biorxiv-20/">Calvin&#39;s preprint on optimal motor preparation</a>
-</div>
+<div><a href="/news/kao-biorxiv-20/">Calvin&#39;s preprint on optimal motor preparation</a></div>
 <div class="blurb">
 <a href="https://www.biorxiv.org/content/10.1101/2020.02.02.931246v3">out on bioRXiv</a>
 </div>
@@ -138,9 +155,7 @@ February 2020
 
 <div class="item">
 October 2019
-<div class="title">
-  <a href="/news/new-students-2019/">Marine Schimel and Kris Jensen join the group as PhD students</a>
-</div>
+<div><a href="/news/new-students-2019/">Marine Schimel and Kris Jensen join the group as PhD students</a></div>
 <div class="blurb">
 Welcome to both!
 </div>
@@ -152,9 +167,7 @@ Welcome to both!
 
 <div class="item">
 October 2019
-<div class="title">
-  <a href="/news/kao-curr-opin-neurobiol-review/">New review article on control theory for analysis of network models</a>
-</div>
+<div><a href="/news/kao-curr-opin-neurobiol-review/">New review article on control theory for analysis of network models</a></div>
 <div class="blurb">
 See <a href="/publications/kao-cur-op-neurobiol-2019/">publications</a>
 </div>
@@ -166,9 +179,7 @@ See <a href="/publications/kao-cur-op-neurobiol-2019/">publications</a>
 
 <div class="item">
 March 2019
-<div class="title">
-  <a href="/news/cosyne19/">Guillaume to speak at two Cosyne workshops in Lisbon</a>
-</div>
+<div><a href="/news/cosyne19/">Guillaume to speak at two Cosyne workshops in Lisbon</a></div>
 <div class="blurb">
 He will be giving a perspective talk about the use of control-theoretic methods in neuroscience (<a href="/news/hennequin_cosyne_2019.pdf">slides</a>) at the workshop on <a href="http://www.cosyne.org/c/index.php?title=Workshops2019_data">data, dynamics and computation</a>, and a talk on the role of inhibition in motor control at the workshop on <a href="http://www.cosyne.org/c/index.php?title=Workshops2019_inhibition_2">inhibitory microcircuits</a>
 </div>
@@ -180,9 +191,7 @@ He will be giving a perspective talk about the use of control-theoretic methods 
 
 <div class="item">
 October 2018
-<div class="title">
-  <a href="/news/kao-spotlight/">Commentary in TICS on recent brain-computer interface results by the Baptista/Yu/Chase groups at CMU</a>
-</div>
+<div><a href="/news/kao-spotlight/">Commentary in TICS on recent brain-computer interface results by the Baptista/Yu/Chase groups at CMU</a></div>
 <div class="blurb">
 See full text <a href="/publications/kao-tics-18/">here</a>
 </div>
@@ -194,9 +203,7 @@ See full text <a href="/publications/kao-tics-18/">here</a>
 
 <div class="item">
 September 2018
-<div class="title">
-  <a href="/news/stroud-2018/">New paper accepted at Nature Neuroscience, with Jake Stroud, Mason Porter and Tim P. Vogels</a>
-</div>
+<div><a href="/news/stroud-2018/">New paper accepted at Nature Neuroscience, with Jake Stroud, Mason Porter and Tim P. Vogels</a></div>
 <div class="blurb">
 Motor primitives in space and time via targeted gain modulation in cortical networks
 </div>
@@ -208,9 +215,7 @@ Motor primitives in space and time via targeted gain modulation in cortical netw
 
 <div class="item">
 September 2018
-<div class="title">
-  <a href="/news/natural-gradient-paper/">New paper on natural gradient in deep networks</a>
-</div>
+<div><a href="/news/natural-gradient-paper/">New paper on natural gradient in deep networks</a></div>
 <div class="blurb">
 See <a href="/publications/bernacchia-nips-2018/">publications</a>
 </div>
@@ -222,9 +227,7 @@ See <a href="/publications/bernacchia-nips-2018/">publications</a>
 
 <div class="item">
 September 2018
-<div class="title">
-  <a href="/news/bernstein-workshop/">Bernstein workshop, Berlin, 25-26 September</a>
-</div>
+<div><a href="/news/bernstein-workshop/">Bernstein workshop, Berlin, 25-26 September</a></div>
 <div class="blurb">
 Come and join us for an inspiring workshop on &ldquo;Emergent function in non-random neural networks&rdquo;, ahead of the main Bernstein Conference
 </div>
@@ -239,8 +242,9 @@ Come and join us for an inspiring workshop on &ldquo;Emergent function in non-ra
 </div>
 
     </div> 
-   
+
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
+
 
 </html>

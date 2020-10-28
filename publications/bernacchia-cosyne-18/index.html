@@ -36,6 +36,29 @@ function menu_off() {
   var x = document.getElementById("myTopnav");
   x.className = "topnav";
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var topbutton = document.getElementById("topbutton");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    topbutton.style.visibility = "visible";
+    topbutton.style.color = "#666";
+    topbutton.style.transform = "translateX(-50%)";
+  } else {
+    topbutton.style.visibility = "hidden";
+    topbutton.style.color = "#fff";
+    topbutton.style.transform = "translateX(-400%)";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
 </script> 
 
  <meta name="generator" content="Hugo 0.54.0" />
@@ -50,13 +73,13 @@ function menu_off() {
             
             
             
-            <a href="/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> Home</a>
+            <a href="/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-home-solid'></i></span> HOME</a>
             
-            <a href="/people/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> People</a>
+            <a href="/people/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-team-solid'></i></span> PEOPLE</a>
             
-            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xwsuxl-brain-alt-thin' style='color: #555;'></i></span> Publications</a>
+            <a href="/publications/" class=""><span style="margin-right:0.3em;"><i class='fi-xwsuxl-brain-solid'></i></span> PUBLICATIONS</a>
             
-            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> Contact</a>
+            <a href="/contact/" class=""><span style="margin-right:0.3em;"><i class='fi-xnsuxl-envelope-solid'></i></span> CONTACT</a>
             
            
             </div>
@@ -77,8 +100,10 @@ function menu_off() {
         </div>
 
         <div class="topimg"></div>
-
-        <div class="main" style="margin-top:3em;" onclick="menu_off()">
+        <div class="topbuttonbar"></div>
+        <div class="topbuttonbar_transparent"></div>
+        <div class="topbutton" onclick="topFunction()" id="topbutton"><i class="fi-ctlux2-chevron"></i></div>
+        <div class="main" id="main" style="margin-top:3em;" onclick="menu_off()">
 
 
 
@@ -129,9 +154,10 @@ provides the first joint normative account of Hebb and Dale&rsquo;s principles.<
 </div>
 
     </div> 
-   
+
     <div class="friconix"><center><a href="http://friconix.com" style="color: #999999;">Icons by <i class="fi-lnsuxl-friconix"></i></a></center></div>
     </body>
+
 
 </html>
 

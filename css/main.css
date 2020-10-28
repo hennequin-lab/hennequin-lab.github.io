@@ -65,8 +65,44 @@ a:hover {
     min-width: 100%;
     background-image: url("/front.jpg");
     background-repeat: repeat;
-    margin-top: 3.2em;
+    margin-top: 2.6em;
     min-height: 10em;
+}
+
+.topbuttonbar {
+    position: fixed;
+    min-height: 4.5em;
+    width: 100%;
+    bottom: 0em;
+    left: 0em;
+    background: #fff;
+    padding: 15px;
+}
+
+.topbuttonbar_transparent {
+    position: fixed;
+    min-height: 5em;
+    width: 100%;
+    bottom: 4.5em;
+    left: 0em;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 255));
+}
+
+.topbutton {
+    position: fixed;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translateX(-400%);
+    font-size: 100%;
+    visibility: hidden;
+    z-index: 99;
+    padding: 0;
+    border-radius: 50%;
+    transition: transform 0.5s ease 0.01s, color 0.5s linear 0.01s;
+}
+
+.topbutton:hover {
+    cursor: pointer;
 }
 
 .topnav {
@@ -95,6 +131,7 @@ a:hover {
 .topnavcontainer {
     margin: auto;
     max-width: 55em;
+    min-height: 2.6em;
 }
 
 .topnav .topnavleft {
@@ -123,6 +160,9 @@ a:hover {
 }
 
 .topnav .icon {
+    margin-top: 0.3em;
+    padding: 0.2em;
+    border-radius: 5px;
     display: none;
 }
 
@@ -156,6 +196,9 @@ a:hover {
         float: left;
         display: block;
         text-align: left;
+    }
+    .topnav.responsive.slidedown .icon {
+        background: #ccc;
     }
 }
 
@@ -202,10 +245,6 @@ img {
 
 .news .item {
     margin-bottom: 1em;
-}
-
-.news .item .title {
-    font-size: 14pt;
 }
 
 .news .item .blurb {
