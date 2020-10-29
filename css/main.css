@@ -81,7 +81,7 @@ a:hover {
 
 .topbuttonbar_transparent {
     position: fixed;
-    min-height: 5em;
+    min-height: 3em;
     width: 100%;
     bottom: 4.5em;
     left: 0em;
@@ -229,18 +229,20 @@ img {
 
 .tag {
     display: inline-block;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 120%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 100%;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    padding: 0.4em 1em;
 }
 
 .tag a {
-    color: #888;
+    color: #555;
 }
 
-.tag a:hover {
-    color: #888;
-    text-decoration: none;
+.tag:hover {
+    background-color: #d5d5d5;
 }
 
 .news .item {
@@ -249,6 +251,12 @@ img {
 
 .news .item .blurb {
     color: #888;
+}
+
+.publication_type {
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .friconix {
